@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Courier", monospace;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #201d1d;
+}
+
+
+._container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+._viewer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 5vw);
+  grid-gap: 1.5rem;
+}
+
+._item_1 {
+  grid-area: logo;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: #201d1d;
+
+}
+
+._item_2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 7;
+
+}
+._item_2 img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+._item_3 {
+  
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 7;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.2rem;
+  
+  
+}
+
+._item_4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 12;
+  background-color: silver;
+}
+._viewer__control {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+._viewer_control:hover{}
+._item_3 .up{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;}
+._item_3 .left{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;}
+._item_3 .right{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;}
+._item_3 .down{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-end: 4;}
+#small {
+  width: 100%;
+  padding: 5px;
+}
+
+#small #tumbs img {
+  width: 20%;
+  padding: 1%;
+}
+
+
+
+._item_1 img {
+  height: 100%;
+  
+  object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+  body {
+   
+  }
+  ._item_1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  }
+
+  ._item_2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 7;
+
+}
+._item_3 {
+  
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.2rem;
+  
+  
+}
+._item_4 {
+    grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 14;
+  background-color: silver;
+}
+#small #tumbs img {
+  width: 30%;
+  padding: 2%;
+}
+
+
+}
