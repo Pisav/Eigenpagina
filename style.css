@@ -32,7 +32,7 @@ body {
   grid-gap: 1.5rem;
 }
 
-._item_1 {
+.title {
   grid-area: logo;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -41,21 +41,25 @@ body {
   background-color: #201d1d;
 
 }
+.title__img {
+  height: 40px;
+  width: 80px;
+}
 
-._item_2 {
+.mainframe {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 7;
 
 }
-._item_2 img{
+.mainframe__large__img {
     width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-._item_3 {
+.navigatie {
   
   grid-column-end: 5;
   grid-row-start: 2;
@@ -69,7 +73,7 @@ body {
   
 }
 
-._item_4 {
+.subframe {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 7;
@@ -83,22 +87,22 @@ body {
 }
 
 ._viewer_control:hover{}
-._item_3 .up{
+.navigatie__up{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;}
-._item_3 .left{
+.navigatie__left{
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;}
-._item_3 .right{
+.navigatie__right{
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;}
-._item_3 .down{
+.navigatie__down{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-end: 4;}
@@ -114,30 +118,29 @@ body {
 
 
 
-._item_1 img {
-  height: 100%;
-  
-  object-fit: cover;
+.title__img {
+  height: 40px;
+  width: 80px;
 }
 @media only screen and (max-width: 600px) {
   body {
    
   }
-  ._item_1 {
+  .title {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
   }
 
-  ._item_2 {
+  .mainframe  {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 7;
 
 }
-._item_3 {
+.navigatie {
   
   grid-column-end: 5;
   grid-row-start: 7;
@@ -150,17 +153,24 @@ body {
   
   
 }
-._item_4 {
+.subframe {
     grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 7;
   grid-row-end: 14;
   background-color: silver;
 }
-#small #tumbs img {
+/*#small #tumbs img {
+  width: 30%;
+  padding: 2%;
+}*/
+.subframe__small{
   width: 30%;
   padding: 2%;
 }
-
+.subframe__tumbs{
+  width: 30%;
+  padding: 2%;
+}
 
 }
